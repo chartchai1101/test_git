@@ -1,0 +1,547 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    box-sizing: border-box;
+    position: relative;
+   
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    margin: 0 0 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+/* Navbar Header Stlye */
+.navbar-header {
+    background: 0 0;
+    transition: all 0.5s;
+}
+.navbar-scrolled{
+    background-color: #000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.navbar-header a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar-header > .logo > a {
+    display: flex;
+    align-items: center;
+}
+#logo-hov:hover{
+    color: #838181;
+}
+.logo img {
+    margin-bottom: 5px;
+}
+.navbar-manu>ul>li {
+    padding-left: 15px;
+    
+}
+.navbar-manu>ul {
+    display: flex;
+    list-style-type: none; /*remove bullet*/
+    padding-top: 13px;
+}
+.navbar-manu>ul>li a:hover {
+    color: #838181;
+}
+ul.navbar-manu>li{
+    padding-left: 30px;
+}
+/* Section-Intro */
+#intro{
+    background: url(img/riverkwai-4-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border: 1px solid #000;
+}
+#intro .overlay{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    height: 750px;
+    background-attachment: fixed;
+}
+.intro-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 20% 0 5% 0;
+}
+#intro .intro-content h1 {
+    color: #fff;
+}
+#intro .intro-content p {
+    color: #ddd;
+}
+.intro-content .fa-angle-down {
+    padding: 10px 14px;
+    color: #aaa;
+    font-size: 50px;
+    margin-top: 175px;
+    text-decoration: none;
+}
+
+/* Section-Intro */
+#about {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+#about img#prof-pic {
+    width: 170px;
+    height: auto;
+}
+#about img{
+    border-radius: 50%;
+}
+.about-prof h2{
+    margin-bottom: 30px;
+}
+#about p{
+    font-size: 16px;
+    max-width: 650px;
+    margin: 30px auto;
+}
+#about #tl-dr{
+    background: #f0f0f0;
+    color: #555;
+    text-align: center;
+    margin: 0px auto ;
+    padding: 20px;
+    height: 200px;
+    width: 50%;
+    max-width: 650px;
+}
+#about #tl-dr h3 {
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #111;
+}
+.tldr-proc {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+.tldr-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 36px;
+    margin: 0 auto 10px;
+}
+#about #tl-dr h5 {
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Roboto Slab', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+#tldr-keyboard {
+    font-size: 50px;
+}
+#tldr-gamepad{
+    font-size: 50px;
+}
+/* Section: Service(Passion) */
+.icon {
+    width: 175px;
+    height: 175px;
+    line-height: 175px;
+    max-width: 100%;
+    background: #00009C;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 auto 40px;
+}
+#service{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:#F0F0F0; ;
+}
+.service-content{
+    display: flex;
+}
+.service-content>div{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#service h3{
+    font-weight: 400;
+}
+#service p{
+    font-size: 15px;
+    margin: 0px auto 40px auto;
+}
+.space-10{
+    padding: 20px;
+}
+.icon i{
+    transition: transform .7s ease-in-out;
+}
+.icon i:hover{
+    transform: rotate(360deg);
+}
+/* Section: Experience*/
+#experience{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #fff;
+}
+#experience p{
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    max-width: 600px;
+    margin: 0px auto;
+}
+.skill-section h3{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 50px;
+    line-height: 1.5;
+}
+.skill-section .skill-icon {
+    padding-bottom: 15px;
+    height: 120px;
+}
+.skill-section .skill-icon img{
+    margin: 0 auto;
+    height: auto;
+    width: 75px;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+}
+.skill-section .skill-icon img:hover{
+    filter: grayscale(0%);
+}
+
+@media screen and (min-width: 450px) {
+    .skill-section .skill-icon img#html {
+        width: 55px;
+    }
+}
+@media screen and (min-width: 450px) {
+    .skill-section .skill-icon img#css {
+        width: 55px;
+    }
+}
+@media screen and (min-width: 450px) {
+    .skill-section .skill-icon img#js {
+        width: 55px;
+    }
+}
+/* @media screen and (min-width: 450px) 
+    .skill-section .skill-icon img#fortinet {
+        width: 60px;
+    }
+} */
+#content-experience{
+    display: flex;
+}
+.employment h3{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+#ait{
+    width: 200px;
+    margin:0 auto 10px ;
+}
+/* Section: Resume */
+#resume{
+    background: url(img/laptop-blur.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #fff;
+}
+#resume .overlay{
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
+    padding: 80px 0;
+    background-attachment: fixed;
+}
+#resume h2{
+    color: #fff;
+}
+
+a.resume-btn {
+    background: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ddd;
+    border:2px solid #ccc;
+    font-family:"Lato", sans-serif; 
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+a.resume-btn:hover {
+    background:rgba(0, 0, 0, 0.5);
+    border:2px solid rgba(0, 0, 0, 0.8);
+}
+/* Section: Portfolio */
+#portfolio{
+    padding-top: 90px;
+    padding-bottom: 100px;
+    background: #fff;
+}
+#portfolio *{
+    z-index: 2;
+}
+#portfolio .section-heading{
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+#portfolio .coming-soon {
+    margin-bottom: 50px;
+    text-transform: lowercase;
+    font-size: 14px;
+}
+#portfolio .portfolio-item-wrapper{
+    width: 31%;
+    display: inline-block;
+    padding: 0 0 5px;
+    margin: 0 1% 30px;
+    vertical-align: top;
+}
+#portfolio .portfolio-item {
+    display: block;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 0 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.148438) 0 1px 2px;
+    padding: 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#portfolio .portfolio-overlay{
+    position: absolute;
+    background-color: rgba(26, 30, 31, 0.85);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+#portfolio .links{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 36%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0;
+    -webkit-transform: translate(0, -50px);
+    -moz-transform: translate(0, -50px);
+    -ms-transform: translate(0, -50px);
+    -o-transform: translate(0, -50px);
+    transform: translate(0, -50px); 
+}
+#portfolio .links a i {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 13px;
+    z-index: 100;
+}
+#portfolio .portfolio-item img {
+    max-width: 100%;
+    width: 100%;
+    opacity: 1.0;
+    transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+#portfolio .portfolio-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background-color: #00009C;
+    color: #fff;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+}
+#portfolio .portfolio-info h3 {
+    font-size: 14px;
+    line-height: 45px;
+    font-weight: 400;
+    margin: 0;
+}
+#portfolio .portfolio-info, #portfolio .links, #portfolio .links a i, #portfolio .links a i::after, #portfolio .portfolio-overlay {
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#portfolio .links a:hover i {
+    color: #fff;
+}
+#portfolio .portfolio-item:hover .portfolio-overlay,
+#portfolio .portfolio-item:hover .links {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#portfolio .portfolio-item:hover .portfolio-info {
+    bottom: 0;
+}
+/* Section: Contact */
+#contact{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color:#F0F0F0; 
+}
+.mail-icon{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    max-width: 100%;
+    font-size: 55px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 auto 10px;
+}
+#contact p{
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 450px;
+    margin: 0 auto;
+}
+#contact #email-button {
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Lato',san-serif;
+    border: 2px solid #000;
+    transition: 0.3s ease-in-out;
+}
+#contact #email-button:hover {
+    color: #fff;
+    background: #00009C;
+    border: 2px solid #00009C;
+}
+
+footer {
+    color: #fff;
+    background-color: #222;
+    padding-top: 50px;
+}
+
+.list-inline>li {
+    padding: 0px;
+}
+ul.social-buttons li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    outline: 0;
+    color: rgba(255, 255, 255, 0.8);
+    background: #333;
+    /* border-radius: 50%; */
+    transition: all .3s;
+}
+.list-inline > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:active {
+    color: #FFF;
+    -webkit-box-shadow: 1px 1px 3px #333;
+    -moz-box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px #333;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#facebook:hover {
+    background-color: #3B5998;
+}
+
+#twitter:hover {
+    background-color: #55ACEE;
+}
+#instagram:hover {
+    background-color: #3f729b;
+}
+#linkedin:hover {
+    background-color: #0077B5
+}
+
+#github:hover {
+    background-color: #4183C4;
+}
+#to-top {
+    transition: all 0.5s;
+}
+
+#to-top:hover {
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+}
+
+#to-top img {
+    width: 50px;
+    padding: 5px;
+    margin: 10px auto 0px;
+}
+
+#to-top-copy {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.copyright {
+    font-weight: 300;
+    color: #aaa;
+}
+
+.copyright p {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    /*text-transform: uppercase;*/
+}
